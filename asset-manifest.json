@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/LiveDuneAuthorization/static/css/main.afd7172b.chunk.css",
+    "main.js": "/LiveDuneAuthorization/static/js/main.6f9c08e4.chunk.js",
+    "main.js.map": "/LiveDuneAuthorization/static/js/main.6f9c08e4.chunk.js.map",
+    "runtime-main.js": "/LiveDuneAuthorization/static/js/runtime-main.68198900.js",
+    "runtime-main.js.map": "/LiveDuneAuthorization/static/js/runtime-main.68198900.js.map",
+    "static/js/2.0e7bd4af.chunk.js": "/LiveDuneAuthorization/static/js/2.0e7bd4af.chunk.js",
+    "static/js/2.0e7bd4af.chunk.js.map": "/LiveDuneAuthorization/static/js/2.0e7bd4af.chunk.js.map",
+    "index.html": "/LiveDuneAuthorization/index.html",
+    "static/css/main.afd7172b.chunk.css.map": "/LiveDuneAuthorization/static/css/main.afd7172b.chunk.css.map",
+    "static/js/2.0e7bd4af.chunk.js.LICENSE.txt": "/LiveDuneAuthorization/static/js/2.0e7bd4af.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68198900.js",
+    "static/js/2.0e7bd4af.chunk.js",
+    "static/css/main.afd7172b.chunk.css",
+    "static/js/main.6f9c08e4.chunk.js"
+  ]
+}
