@@ -5,10 +5,10 @@ import {
     CONFIRMATION_ROUTE,
     RECOVERY_ROUTE
 } from "../utils/consts";
-import Registration from "../pages/Registration";
-import Login from "../pages/Login";
-import EmailConfirmation from "../pages/EmailConfirmation";
-import PasswordRecovery from "../pages/PasswordRecovery";
+import Registration from "../pages/Registration/Registration";
+import Login from "../pages/Login/Login";
+import EmailConfirmation from "../pages/EmailConfirmation/EmailConfirmation";
+import PasswordRecovery from "../pages/PasswordRecovery/PasswordRecovery";
 
 export const publicRoutes: IMenu[] = [
   {

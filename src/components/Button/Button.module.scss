@@ -1,0 +1,64 @@
+@import "../../styles/abstract/variables";
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.text {
+  position: relative;
+}
+.loading {
+  animation: preloader-rotate 2s infinite linear;
+  position: absolute;
+  top: -6px;
+  left: -30px;
+}
+
+.button_primary {
+  font-size: 16px;
+  line-height: 13px;
+
+  background-color: $first-color;
+  color: $fourthly-font-color;
+  border-radius: 64px;
+  &:hover {
+    background-color: $fifth-font-color-dark;
+  }
+  @media screen and (max-width: $tablet + px) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.button_secondary {
+  font-size: 14px;
+  line-height: 24px;
+
+  background-color: transparent;
+  color: $first-color;
+}
+
+.button_flat {
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $second-font-color;
+  &:hover {
+    color: #585858;
+  }
+  @media screen and (max-width: $tablet + px) {
+    font-size: 14px;
+  }
+}

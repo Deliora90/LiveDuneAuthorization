@@ -1,0 +1,60 @@
+@import "../../styles/abstract/variables";
+
+.header {
+  padding: 22px 54px;
+  background-color: $bg-color;
+  @media screen and (max-width: $tablet + px) {
+    padding: 10px 16px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 142.95px;
+  height: 20px;
+  transition: all 0.3s ease 0s;
+  @media screen and (max-width: $tablet + px) {
+    width: 114.36px;
+    height: 16px;
+  }
+}
+
+.control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $second-font-color;
+  margin-right: 24px;
+  @media screen and (max-width: $phone + px) {
+    display: none;
+  }
+}
+
+.button {
+  min-width: 170px;
+  padding: 18px 37.57px 19px 35.43px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  @media screen and (max-width: $tablet + px) {
+    min-width: 113px;
+    font-size: 12px;
+    line-height: 13px;
+    padding: 13.5px 16px;
+    letter-spacing: 0;
+  }
+}
