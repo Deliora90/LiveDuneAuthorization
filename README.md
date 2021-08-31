@@ -1,2 +1,2 @@
 # LiveDuneAuthorization
-This is test project for LiveDune.
+This is the test project for LiveDune.
