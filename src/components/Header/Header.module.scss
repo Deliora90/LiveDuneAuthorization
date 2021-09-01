@@ -1,7 +1,7 @@
 @import "../../styles/abstract/variables";
 
 .header {
-  padding: 22px 54px;
+  padding: 24px 54px;
   background-color: $bg-color;
   @media screen and (max-width: $tablet + px) {
     padding: 10px 16px;

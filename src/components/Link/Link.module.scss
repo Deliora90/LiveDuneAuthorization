@@ -1,0 +1,35 @@
+@import "../../styles/abstract/variables";
+
+.link {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  justify-content: flex-start;
+
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  cursor: pointer;
+  background-color: $bg-color;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: $second-bg-color;
+    border-color: $second-bg-color;
+  }
+}
+.text{
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: $first-font-color;
+  @media screen and (max-width: $tablet + px) {
+    width: 100%;
+    padding-right: 24px;
+    text-align: center;
+  }
+}

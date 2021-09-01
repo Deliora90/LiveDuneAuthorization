@@ -1,0 +1,23 @@
+@import "../../styles/abstract/variables";
+
+.input{
+  margin-top: 16px;
+  &:first-child{
+    margin-top: 0;
+  }
+}
+.button{
+  width: 100%;
+}
+
+.button_ok{
+  margin: 32px 0px 24px 0px;
+  height: 64px;
+  @media screen and (max-width: $tablet + px){
+    height: 56px;
+  }
+}
+.button_recovery{
+  padding: 0;
+  height: auto;
+}

@@ -1,0 +1,42 @@
+@import "../../styles/abstract/variables";
+
+.input {
+  width: 100%;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: $first-font-color;
+
+  padding: 18px 20px 19px 20px;
+  border: 1px solid $fourthly-color;
+  border-radius: 12px;
+
+  transition: all 0.3s ease 0s;
+
+  &:focus {
+    border-color: $first-color;
+  }
+  &::-webkit-input-placeholder {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #e6e6e6;
+  }
+}
+.input_danger {
+  border-color: $second-color;
+}
+.error {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $sixthly-font-color;
+  margin-top: 6px;
+  padding: 0;
+}

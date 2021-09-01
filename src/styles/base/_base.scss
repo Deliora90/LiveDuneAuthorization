@@ -23,3 +23,9 @@ body {
   font-weight: $fontWeight;
   color: $second-font-color;
 }
+
+input{
+  &:focus {
+    outline: none;
+  }
+}

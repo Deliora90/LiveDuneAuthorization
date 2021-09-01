@@ -4,9 +4,10 @@ import styles from "./Title.module.scss";
 
 interface ITitleProps {
   size?: "xl" | "l";
+  className?: string;
 }
 
-const Title: React.FC<ITitleProps> = ({ size, children }) => {
+const Title: React.FC<ITitleProps> = ({ size, className, children }) => {
   const [style, setStyle] = useState(styles.title_xl);
 
   useEffect(() => {
@@ -24,7 +25,7 @@ const Title: React.FC<ITitleProps> = ({ size, children }) => {
   }, [size])
 
   return (
-    <h2 className={classNames(styles.title, style)}>
+    <h2 className={classNames(className, styles.title, style)}>
       {children}
     </h2>
   )

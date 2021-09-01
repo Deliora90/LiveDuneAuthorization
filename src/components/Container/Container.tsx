@@ -1,9 +1,13 @@
 import React from "react";
+import classnames from 'classnames';
 import styles from "./Container.module.scss";
 
-const Container: React.FC = ({children}) => {
+interface IContainerProps {
+  className?: string;
+}
+const Container: React.FC<IContainerProps> = ({ className, children }) => {
   return (
-    <div className={styles.container}>
+    <div className={classnames(className, styles.container)}>
       {children}
     </div>
   )

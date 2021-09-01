@@ -1,0 +1,14 @@
+@import "../../styles/abstract/variables";
+.text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $second-font-color;
+
+  @media screen and (max-width: $phone + px) {
+    font-size: 14px;
+  }
+}

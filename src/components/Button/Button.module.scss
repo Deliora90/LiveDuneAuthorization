@@ -7,12 +7,16 @@
 }
 
 .button {
+  padding: 22px 22px 22.44px 22px;
   font-family: "OpenSans";
   font-style: normal;
   font-weight: bold;
 
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  @media screen and (max-width: $phone + px) {
+    padding: 20px 22.63px 20px 20px;
+  }
 }
 .text {
   position: relative;
