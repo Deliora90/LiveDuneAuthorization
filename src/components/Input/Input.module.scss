@@ -26,6 +26,10 @@
     line-height: 24px;
     color: #e6e6e6;
   }
+  &:disabled {
+    background: $third-color;
+    color: $second-font-color;
+  }
 }
 .input_danger {
   border-color: $second-color;

@@ -30,9 +30,11 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
 
   color: $first-font-color;
 }
 .offer {
+  white-space: nowrap;
   color: $fifth-font-color;
 }

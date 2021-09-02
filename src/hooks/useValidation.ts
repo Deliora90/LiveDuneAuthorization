@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 
 export interface IValidationList {
   isUncorrectEmail?: boolean;
+  isEmpty?: boolean;
 }
 
 export const useValidation = (value: string, validationList?: IValidationList) => {
   const [isUncorrectEmail, setIsUnorrectEmail] = useState(false);
+  const [isEmpty, setIsEmpty] = useState(false);
 
   useEffect(() => {
     for (const validation in validationList) {
@@ -15,9 +17,15 @@ export const useValidation = (value: string, validationList?: IValidationList) =
           const checkResult = re.test(String(value).toLowerCase());
           setIsUnorrectEmail(!checkResult);
           break;
+        case "isEmpty":
+          value ? setIsEmpty(false) : setIsEmpty(true);
+          break;
       }
     }
   }, [value, validationList]);
 
-  return { isUncorrectEmail }
+  return {
+    isUncorrectEmail,
+    isEmpty,
+  }
 }

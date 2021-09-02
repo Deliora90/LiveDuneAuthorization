@@ -17,12 +17,12 @@ function authPage(title: string, desc: string, Component: React.FC): React.FC {
         </Description>
         <div className={styles.links}>
           <div className={styles.link_container}>
-            <Link href="#" className={styles.link} Icon={FacebookSvg}>
+            <Link className={styles.link} Icon={FacebookSvg}>
               Войти через Facebook
             </Link>
           </div>
           <div className={styles.link_container}>
-            <Link href="#" className={styles.link} Icon={GoogleSvg}>
+            <Link className={styles.link} Icon={GoogleSvg}>
               Войти через Google
             </Link>
           </div>

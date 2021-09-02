@@ -2,6 +2,7 @@
 
 .header {
   padding: 24px 54px;
+  max-height: 99px;
   background-color: $bg-color;
   @media screen and (max-width: $tablet + px) {
     padding: 10px 16px;
@@ -56,5 +57,11 @@
     line-height: 13px;
     padding: 13.5px 16px;
     letter-spacing: 0;
+  }
+}
+.button_flat {
+  min-width: auto;
+  @media screen and (max-width: $tablet + px) {
+    min-width: auto;
   }
 }

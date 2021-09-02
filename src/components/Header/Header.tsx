@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 import { useHistory, useLocation } from 'react-router-dom';
 import {
   REGISTRATION_ROUTE,
@@ -11,7 +12,7 @@ import style from "./Header.module.scss";
 
 const Header: React.FC = () => {
   const history = useHistory();
-  let location = useLocation();
+  const location = useLocation();
 
   const getButtonWithText = (textButton: string, path: string, text?: string) => {
     return (
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
   }
   const getFlatButton = (textButton: string) => {
     return (
-      <Button type={"flat"}>
+      <Button typeStyle={"flat"} className={classnames(style.button, style.button_flat)}>
         {textButton}
       </Button>
     )

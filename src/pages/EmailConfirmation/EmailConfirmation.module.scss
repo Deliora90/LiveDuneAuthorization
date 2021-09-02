@@ -1,0 +1,53 @@
+@import "../../styles/abstract/variables";
+.title {
+  margin-bottom: 16px;
+  @media screen and (max-width: $tablet + px) {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 8px;
+  }
+}
+.description {
+  max-width: 562px;
+  margin-bottom: 40px;
+}
+.description_bad {
+  max-width: 674px;
+  margin-bottom: 32px;
+}
+
+.container {
+  width: 689px;
+  height: calc(100vh - 99px);
+  @media screen and (max-width: $tablet + px) {
+    width: calc(100% - 32px);
+  }
+}
+
+.button{
+  width: 100%;
+}
+
+.button_primary{
+  padding: 22px 73.33px 22.44px 73.75px;
+  margin-bottom: 24px;
+  width: 354px;
+  height: 64px;
+  @media screen and (max-width: $tablet + px){
+    width: 343px;
+    height: 56px;
+  }
+}
+.button_secondary{
+  padding: 0;
+  height: auto;
+}
+
+.input{
+  max-width: 420px;
+  margin-bottom: 32px;
+}
+.mail{
+  font-weight: 700;
+  color: $fifth-font-color;
+}

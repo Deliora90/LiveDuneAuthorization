@@ -3,7 +3,7 @@ import styles from "./Link.module.scss";
 import classnames from 'classnames';
 
 interface ILinkProps {
-  href: string;
+  href?: string;
   className?: string;
   Icon?: React.FC;
 }
