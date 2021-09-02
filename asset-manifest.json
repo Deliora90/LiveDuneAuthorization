@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/LiveDuneAuthorization/static/css/main.bf903de9.chunk.css",
-    "main.js": "/LiveDuneAuthorization/static/js/main.26e5e940.chunk.js",
-    "main.js.map": "/LiveDuneAuthorization/static/js/main.26e5e940.chunk.js.map",
+    "main.css": "/LiveDuneAuthorization/static/css/main.3817e969.chunk.css",
+    "main.js": "/LiveDuneAuthorization/static/js/main.b4b38d05.chunk.js",
+    "main.js.map": "/LiveDuneAuthorization/static/js/main.b4b38d05.chunk.js.map",
     "runtime-main.js": "/LiveDuneAuthorization/static/js/runtime-main.68198900.js",
     "runtime-main.js.map": "/LiveDuneAuthorization/static/js/runtime-main.68198900.js.map",
     "static/js/2.1259243d.chunk.js": "/LiveDuneAuthorization/static/js/2.1259243d.chunk.js",
     "static/js/2.1259243d.chunk.js.map": "/LiveDuneAuthorization/static/js/2.1259243d.chunk.js.map",
     "index.html": "/LiveDuneAuthorization/index.html",
-    "static/css/main.bf903de9.chunk.css.map": "/LiveDuneAuthorization/static/css/main.bf903de9.chunk.css.map",
+    "static/css/main.3817e969.chunk.css.map": "/LiveDuneAuthorization/static/css/main.3817e969.chunk.css.map",
     "static/js/2.1259243d.chunk.js.LICENSE.txt": "/LiveDuneAuthorization/static/js/2.1259243d.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/LiveDuneAuthorization/static/media/OpenSans-SemiBold.c87a9608.woff",
     "static/media/facebook.637a23ca.svg": "/LiveDuneAuthorization/static/media/facebook.637a23ca.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.68198900.js",
     "static/js/2.1259243d.chunk.js",
-    "static/css/main.bf903de9.chunk.css",
-    "static/js/main.26e5e940.chunk.js"
+    "static/css/main.3817e969.chunk.css",
+    "static/js/main.b4b38d05.chunk.js"
   ]
 }
