@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import classnames from "classnames";
 import { useHistory, useLocation } from 'react-router-dom';
@@ -52,7 +53,7 @@ const Header: React.FC = () => {
   return (
     <header className={style.header}>
       <div className={style.container}>
-        <a href="\login">
+        <a href="#">
           <LogoImg className={style.logo} />
         </a>
         <div className={style.control}>
