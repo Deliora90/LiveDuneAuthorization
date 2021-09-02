@@ -2,7 +2,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Deliora90/LiveDuneAuthorization)
 
-This is the test project for LiveDune.
+This is the test project for LiveDune. If you want to watch these project, please, follow the link: https://deliora90.github.io/LiveDuneAuthorization
 
 ## Content
 * React

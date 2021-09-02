@@ -16,7 +16,7 @@ const Login  = () => {
   const email = useInput("");
   const password = useInput("");
 
-  const signInHandle = () => {
+  const onSubmit = () => {
     if (email.value !== "example@example.com"
       && password.value !== "password2021") {
       setIsUncorrectAuth(true)
@@ -29,7 +29,7 @@ const Login  = () => {
   }
 
   return (
-    <Form onSubmit={() => { console.log("onSubmit") }}>
+    <Form onSubmit={onSubmit}>
       <Input type="text"
         className={styles.input}
         value={email.value}
@@ -48,7 +48,7 @@ const Login  = () => {
         onBlur={password.onBlur}
       />
       <Button className={classnames(styles.button, styles.button_ok)}
-        onClick={signInHandle}>
+        typeButton="submit">
         Войти в аккаунт
       </Button>
       <Button className={classnames(styles.button, styles.button_recovery)}

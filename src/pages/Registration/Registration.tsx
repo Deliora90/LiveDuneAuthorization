@@ -24,7 +24,7 @@ const Registration = () => {
   const promoHandler = () => {
     setHavePromo((value) => !value);
   }
-  const onSubmit = () => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     if (!email.isUncorrectEmail && !password.isEmpty) {
       dispatchUser({ type: UserActionTypes.REGISTRATION_SUCCESS, payload: new User(name.value, email.value) });
       history.push(CONFIRMATION_ROUTE);
