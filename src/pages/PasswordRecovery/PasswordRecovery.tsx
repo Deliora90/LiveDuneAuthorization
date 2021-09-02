@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Container from "../../components/Container/Container";
-import styles from "./PasswordRecovery.module.scss";
 import LockImg from "../../assets/images/lock.png";
 import MailImg from "../../assets/images/mail.png";
 import Title from "../../components/Title/Title";
@@ -9,19 +8,34 @@ import { useInput } from "../../hooks/useInput";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
 import classnames from "classnames";
+import Form from "../../components/Form/Form";
+import styles from "./PasswordRecovery.module.scss";
+import { useEffect } from "react";
 
 const PasswordRecovery = () => {
   const [emailSent, setEmailSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isUncorrectRecovery, setIsUncorrectRecovery] = useState(false);
 
   const email = useInput("", { isUncorrectEmail: true });
 
-  const onSend = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setEmailSent(true);
-    }, 5000);
+  const onBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    console.log("sdsds")
+    setIsUncorrectRecovery(false);
+    email.onBlur(e);
+  };
+
+  const onSubmit = () => {
+    if (email.value === "example@example.com") {
+      setIsUncorrectRecovery(false);
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+        setEmailSent(true);
+      }, 5000);
+    } else {
+      setIsUncorrectRecovery(true);
+    }
   }
 
   const getContent = () => {
@@ -35,25 +49,28 @@ const PasswordRecovery = () => {
           <Description className={styles.description}>
             Введите e-mail, на который регистрировались ранее
           </Description>
-          <Input type="text"
-            className={styles.input}
-            value={email.value}
-            placeholder="Email"
-            onChange={email.onChange}
-            onBlur={email.onBlur}
-            disabled={loading}
-          />
-          <Button className={classnames(styles.button, styles.button_primary)}
-            onClick={onSend}
-            isLoading={loading}
-          >
-            Отправить
-          </Button>
-          <Button className={classnames(styles.button, styles.button_flat)}
-            typeStyle={"flat"}
-            onClick={() => { }}>
-            Отменить
-          </Button>
+          <Form className={styles.form} onSubmit={onSubmit}>
+            <Input type="text"
+              className={styles.input}
+              value={email.value}
+              isError={(email.isUncorrectEmail && email.touched ) || isUncorrectRecovery}
+              errorLabel="Неверный еmail"
+              placeholder="Email"
+              onChange={email.onChange}
+              onBlur={onBlur}
+              disabled={loading}
+            />
+            <Button className={classnames(styles.button, styles.button_primary)}
+              isLoading={loading}
+            >
+              Отправить
+            </Button>
+            <Button className={classnames(styles.button, styles.button_flat)}
+              typeStyle={"flat"}
+              onClick={() => { }}>
+              Отменить
+            </Button>
+          </Form>
         </>
       )
     } else {
