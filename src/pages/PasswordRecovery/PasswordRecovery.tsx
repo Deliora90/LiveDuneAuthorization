@@ -10,7 +10,6 @@ import Button from "../../components/Button/Button";
 import classnames from "classnames";
 import Form from "../../components/Form/Form";
 import styles from "./PasswordRecovery.module.scss";
-import { useEffect } from "react";
 
 const PasswordRecovery = () => {
   const [emailSent, setEmailSent] = useState(false);
