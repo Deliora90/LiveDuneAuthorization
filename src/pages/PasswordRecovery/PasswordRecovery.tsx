@@ -24,7 +24,8 @@ const PasswordRecovery = () => {
     email.onBlur(e);
   };
 
-  const onSubmit = () => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     if (email.value === "example@example.com") {
       setIsUncorrectRecovery(false);
       setLoading(true);

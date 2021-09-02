@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { UserContext } from "../../state/UserContext";
 import { useHistory } from 'react-router-dom';
 import { CONFIRMATION_ROUTE } from "../../utils/consts";
-import { UserActionTypes, User } from "../../types/user";
+import { UserActionTypes, User } from "../../state/UserReducer";
 import classnames from "classnames";
 import AuthPage from "../../hocs/AuthPage/AuthPage";
 import Input from "../../components/Input/Input";
@@ -25,6 +25,7 @@ const Registration = () => {
     setHavePromo((value) => !value);
   }
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     if (!email.isUncorrectEmail && !password.isEmpty) {
       dispatchUser({ type: UserActionTypes.REGISTRATION_SUCCESS, payload: new User(name.value, email.value) });
       history.push(CONFIRMATION_ROUTE);

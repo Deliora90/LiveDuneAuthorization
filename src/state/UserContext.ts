@@ -1,6 +1,5 @@
 import { createContext } from "react";
-import { UserAction, UserState } from "../types/user";
-import { initialState } from "./UserReducer";
+import { initialState, UserAction, UserState } from "./UserReducer";
 
 interface UserContextType {
   userState: UserState;

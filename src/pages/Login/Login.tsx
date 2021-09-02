@@ -16,7 +16,8 @@ const Login  = () => {
   const email = useInput("");
   const password = useInput("");
 
-  const onSubmit = () => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     if (email.value !== "example@example.com"
       && password.value !== "password2021") {
       setIsUncorrectAuth(true)
